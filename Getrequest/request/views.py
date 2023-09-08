@@ -16,7 +16,7 @@ def jsonview(request):
          'current_day': current_day,
          'utc_time': utc_time, 
          'track': track,
-         'github_file_url': '',
+         'github_file_url': 'https://github.com/njokuchidinma/HNGxSTAGE1/tree/main/Getrequest',
          'github_repo_url': 'https://github.com/njokuchidinma/HNGxSTAGE1.git',
          'status_code': 200,
         }

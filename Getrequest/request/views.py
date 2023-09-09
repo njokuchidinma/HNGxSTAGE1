@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 from datetime import datetime,timezone
+import pytz
 
 
 def api(request):
@@ -10,7 +11,9 @@ def api(request):
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     current_day = days[current_day_digit]
     # utc_time = date_time.replace(tzinfo=timezone.utc)
-    utc_time = date_time
+    current_utc_time = datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+    utc_time = current_utc_time
 
     track = request.GET.get("track")
    

@@ -4,7 +4,7 @@ ENV PYTHONBUFFERED=1
 
 ADD ./requirements.txt /app/requirements.txt
 
-ADD ./app 
+ADD . /app 
 WORKDIR /app
 
 RUN apt update -y

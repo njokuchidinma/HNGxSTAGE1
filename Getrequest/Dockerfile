@@ -9,7 +9,10 @@ WORKDIR /app
 
 RUN apt update -y
 
-RUN pip install -r /app/requirements.txt
+RUN pip install django
+RUN pip install gunicorn
+
+# RUN pip install -r /app/requirements.txt
 
 
 

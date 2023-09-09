@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import jsonview
+from .views import api
 
 
 urlpatterns = [
-    path('jsonview/', jsonview, name='jsonview'),
+    path('api/', api, name='api'),
 ]

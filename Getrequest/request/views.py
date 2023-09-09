@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from datetime import datetime,timezone
 
 
-def jsonview(request):
+def api(request):
     slack_name = request.GET.get("slack_name")
     date_time = datetime.now(timezone.utc)
     current_day_digit = date_time.weekday()

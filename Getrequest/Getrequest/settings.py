@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-yzbkna2uj)^5$ma*2=vlbno8z36=i0%+*f!8i37yw=s5oy&17v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nccgetresponse.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '127.0.0.1:8000', 'nccgetresponse.onrender.com', 'localhost']
 
 
 # Application definition

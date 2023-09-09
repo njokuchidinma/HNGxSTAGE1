@@ -12,6 +12,7 @@ RUN apt update -y
 RUN pip install --upgrade pip
 RUN pip install django
 RUN pip install gunicorn
+RUN pip install pytz
 
 # RUN pip install -r /app/requirements.txt
 
